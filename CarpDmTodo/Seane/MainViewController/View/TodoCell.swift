@@ -21,4 +21,7 @@ class TodoCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func set(item: TodoModel) {
+        textLabel?.text = item.subject
+    }
 }
