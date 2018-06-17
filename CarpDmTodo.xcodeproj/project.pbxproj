@@ -11,15 +11,33 @@
 		E9C65EBE20D4EA1500BB9487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C65EBC20D4EA1500BB9487 /* Main.storyboard */; };
 		E9C65EC020D4EA1600BB9487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C65EBF20D4EA1600BB9487 /* Assets.xcassets */; };
 		E9C65EC320D4EA1600BB9487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C65EC120D4EA1600BB9487 /* LaunchScreen.storyboard */; };
+		E9C9355120D619940064543E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9355020D619940064543E /* AppCoordinator.swift */; };
+		E9C9355320D619C70064543E /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9355220D619C70064543E /* CoordinatorProtocol.swift */; };
+		E9C9355620D61A260064543E /* TodoMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9355520D61A260064543E /* TodoMainCoordinator.swift */; };
+		E9C9355B20D61B6F0064543E /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9355920D61B6F0064543E /* TodoViewController.swift */; };
+		E9C9355C20D61B6F0064543E /* TodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C9355A20D61B6F0064543E /* TodoViewController.xib */; };
+		E9C9355F20D61BAB0064543E /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9355D20D61BAB0064543E /* TodoCell.swift */; };
+		E9C9356020D61BAB0064543E /* TodoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C9355E20D61BAB0064543E /* TodoCell.xib */; };
+		EFA427BE4DF12F998BE9D51F /* Pods_CarpDmTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279F430BF8FE3E68AA89CCE6 /* Pods_CarpDmTodo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24665C7A7381A9B772DAA4DD /* Pods-CarpDmTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarpDmTodo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarpDmTodo/Pods-CarpDmTodo.debug.xcconfig"; sourceTree = "<group>"; };
+		279F430BF8FE3E68AA89CCE6 /* Pods_CarpDmTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarpDmTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74E6B17B7A88A251997BB12 /* Pods-CarpDmTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarpDmTodo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarpDmTodo/Pods-CarpDmTodo.release.xcconfig"; sourceTree = "<group>"; };
 		E9C65EB520D4EA1500BB9487 /* CarpDmTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarpDmTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C65EB820D4EA1500BB9487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9C65EBD20D4EA1500BB9487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9C65EBF20D4EA1600BB9487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C65EC220D4EA1600BB9487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C65EC420D4EA1600BB9487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C9355020D619940064543E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E9C9355220D619C70064543E /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		E9C9355520D61A260064543E /* TodoMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoMainCoordinator.swift; sourceTree = "<group>"; };
+		E9C9355920D61B6F0064543E /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		E9C9355A20D61B6F0064543E /* TodoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoViewController.xib; sourceTree = "<group>"; };
+		E9C9355D20D61BAB0064543E /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		E9C9355E20D61BAB0064543E /* TodoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA427BE4DF12F998BE9D51F /* Pods_CarpDmTodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D95B2114D38D79275F1F7B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24665C7A7381A9B772DAA4DD /* Pods-CarpDmTodo.debug.xcconfig */,
+				A74E6B17B7A88A251997BB12 /* Pods-CarpDmTodo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		89FF187A123934A2858D8F36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				279F430BF8FE3E68AA89CCE6 /* Pods_CarpDmTodo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E9C65EAC20D4EA1400BB9487 = {
 			isa = PBXGroup;
 			children = (
 				E9C65EB720D4EA1500BB9487 /* CarpDmTodo */,
 				E9C65EB620D4EA1500BB9487 /* Products */,
+				6D95B2114D38D79275F1F7B4 /* Pods */,
+				89FF187A123934A2858D8F36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +90,8 @@
 		E9C65EB720D4EA1500BB9487 /* CarpDmTodo */ = {
 			isa = PBXGroup;
 			children = (
+				E9C9354C20D619340064543E /* Seane */,
+				E9C9354F20D619690064543E /* Coordinator */,
 				E9C65EB820D4EA1500BB9487 /* AppDelegate.swift */,
 				E9C65EBC20D4EA1500BB9487 /* Main.storyboard */,
 				E9C65EBF20D4EA1600BB9487 /* Assets.xcassets */,
@@ -61,6 +101,59 @@
 			path = CarpDmTodo;
 			sourceTree = "<group>";
 		};
+		E9C9354C20D619340064543E /* Seane */ = {
+			isa = PBXGroup;
+			children = (
+				E9C9354E20D619430064543E /* MainViewController */,
+				E9C9354D20D6193F0064543E /* DetailViewController */,
+			);
+			path = Seane;
+			sourceTree = "<group>";
+		};
+		E9C9354D20D6193F0064543E /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		E9C9354E20D619430064543E /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9C9355820D61B510064543E /* View */,
+				E9C9355720D61B4D0064543E /* ViewModel */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		E9C9354F20D619690064543E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E9C9355220D619C70064543E /* CoordinatorProtocol.swift */,
+				E9C9355020D619940064543E /* AppCoordinator.swift */,
+				E9C9355520D61A260064543E /* TodoMainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E9C9355720D61B4D0064543E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E9C9355820D61B510064543E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9C9355920D61B6F0064543E /* TodoViewController.swift */,
+				E9C9355A20D61B6F0064543E /* TodoViewController.xib */,
+				E9C9355D20D61BAB0064543E /* TodoCell.swift */,
+				E9C9355E20D61BAB0064543E /* TodoCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9C65EC720D4EA1600BB9487 /* Build configuration list for PBXNativeTarget "CarpDmTodo" */;
 			buildPhases = (
+				C8882099490C492E9C9EE36F /* [CP] Check Pods Manifest.lock */,
 				E9C65EB120D4EA1500BB9487 /* Sources */,
 				E9C65EB220D4EA1500BB9487 /* Frameworks */,
 				E9C65EB320D4EA1500BB9487 /* Resources */,
+				FE5F422BED00FE8786AE84CA /* [CP] Embed Pods Frameworks */,
+				78F4E5647B9B5EB7FFEC7D5E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -119,20 +215,87 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C9355C20D61B6F0064543E /* TodoViewController.xib in Resources */,
 				E9C65EC320D4EA1600BB9487 /* LaunchScreen.storyboard in Resources */,
 				E9C65EC020D4EA1600BB9487 /* Assets.xcassets in Resources */,
+				E9C9356020D61BAB0064543E /* TodoCell.xib in Resources */,
 				E9C65EBE20D4EA1500BB9487 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78F4E5647B9B5EB7FFEC7D5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarpDmTodo/Pods-CarpDmTodo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8882099490C492E9C9EE36F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarpDmTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE5F422BED00FE8786AE84CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CarpDmTodo/Pods-CarpDmTodo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarpDmTodo/Pods-CarpDmTodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9C65EB120D4EA1500BB9487 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C9355B20D61B6F0064543E /* TodoViewController.swift in Sources */,
+				E9C9355F20D61BAB0064543E /* TodoCell.swift in Sources */,
+				E9C9355120D619940064543E /* AppCoordinator.swift in Sources */,
 				E9C65EB920D4EA1500BB9487 /* AppDelegate.swift in Sources */,
+				E9C9355320D619C70064543E /* CoordinatorProtocol.swift in Sources */,
+				E9C9355620D61A260064543E /* TodoMainCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +437,7 @@
 		};
 		E9C65EC820D4EA1600BB9487 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24665C7A7381A9B772DAA4DD /* Pods-CarpDmTodo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -293,6 +457,7 @@
 		};
 		E9C65EC920D4EA1600BB9487 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74E6B17B7A88A251997BB12 /* Pods-CarpDmTodo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
