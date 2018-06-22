@@ -7,8 +7,21 @@
 //
 
 import Foundation
+import RealmSwift
+import RxSwift
+
+protocol TodoDetailViewControllerProtocol: UIViewControllerExtension {
+    
+    var viewModel: TodoDetailViewModel { get }
+    
+    func dataBindToTodo()
+}
 
 class TodoDetailViewModel {
     
+    lazy var item: Variable<TodoModel> = Variable(TodoModel())
     
+    init(item: TodoModel) {
+        self.item.value = item
+    }
 }

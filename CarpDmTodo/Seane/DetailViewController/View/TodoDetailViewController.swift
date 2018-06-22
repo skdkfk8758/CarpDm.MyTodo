@@ -11,6 +11,9 @@ import RxSwift
 
 class TodoDetailViewController: UIViewController {
 
+    @IBOutlet weak var subject: UILabel!
+    @IBOutlet weak var content: UITextView!
+    
     internal let viewModel: TodoDetailViewModel
     internal let disposeBag: DisposeBag
     
@@ -38,7 +41,7 @@ class TodoDetailViewController: UIViewController {
     }
     
     func initData() {
-        
+        dataBindToTodo()
     }
     
     func initAction() {
@@ -47,6 +50,12 @@ class TodoDetailViewController: UIViewController {
 }
 
 // MARK: - 기능구현
-extension TodoDetailViewController: UIViewControllerExtension {
-    
+extension TodoDetailViewController: TodoDetailViewControllerProtocol {
+    func dataBindToTodo() {
+        viewModel.item.asObservable()
+            .subscribe(onNext: { (item) in
+                self.subject.text = item.subject
+                self.content.text = item.contents
+            }).disposed(by: disposeBag)
+    }
 }

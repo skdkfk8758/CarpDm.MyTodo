@@ -10,6 +10,9 @@ import UIKit
 
 class TodoCell: UITableViewCell {
 
+    @IBOutlet weak var isChecked: UIButton!
+    @IBOutlet weak var subject: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,6 +25,6 @@ class TodoCell: UITableViewCell {
     }
     
     func set(item: TodoModel) {
-        textLabel?.text = item.subject
+        subject?.text = item.subject
     }
 }

@@ -12,7 +12,7 @@ final class TodoMainCoordinator: Coordinator, CoordinatorSetting {
     
     func start() {
         let viewModel = TodoMainViewModel()
-        let viewController = TodoViewController(viewModel: viewModel)
+        let viewController = TodolistViewController(viewModel: viewModel)
         
         viewModel.coordinator = self
         
@@ -23,10 +23,31 @@ final class TodoMainCoordinator: Coordinator, CoordinatorSetting {
 
 extension TodoMainCoordinator: TodoMainViewCoordinatorDelegate {
     func showDetail(item: TodoModel) {
-        let viewModel = TodoDetailViewModel()
+        let viewModel = TodoDetailViewModel(item: item)
         let viewController = TodoDetailViewController(viewModel: viewModel)
         
         presenter?.isNavigationBarHidden = false
         presenter?.pushViewController(viewController, animated: true)
+    }
+    
+    func showWriteView() {
+        let viewModel = TodoWriteViewModel()
+        let viewController = TodoWriteViewController(viewModel: viewModel)
+        
+        viewModel.coordinator = self
+        
+        presenter?.isNavigationBarHidden = false
+        presenter?.pushViewController(viewController, animated: true)
+    }
+}
+
+extension TodoMainCoordinator: TodoWriteViewCoordinatorDelegate {
+    func showListView() {
+//        let viewModel = TodoMainViewModel()
+//        let viewController = TodolistViewController(viewModel: viewModel)
+//
+//        presenter?.isNavigationBarHidden = false
+//        presenter?.pushViewController(viewController, animated: true)
+        presenter?.popViewController(animated: true)
     }
 }
